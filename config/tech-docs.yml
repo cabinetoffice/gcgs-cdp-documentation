@@ -1,0 +1,44 @@
+# Host to use for canonical URL generation (without trailing slash)
+host: guidance.data.gov.uk
+
+# Header-related options
+show_govuk_logo: false
+service_name: gcgs-cdp-documentation
+# service_link: https://data.gov.uk/
+phase:
+
+# Links to show on right-hand-side of header
+header_links:
+  # Publish your data: https://data.gov.uk/publishers
+  # Documentation: /
+  # Support: https://data.gov.uk/support
+
+# Links to show in the page footer
+# footer_links:
+  # data.gov.uk Technical Documentation Accessibility: /accessibility-statement.html
+
+# Enables search functionality. This indexes pages only and is not recommended for single-page sites.
+enable_search: true
+
+# Tracking ID from Google Analytics (e.g. UA-XXXX-Y)
+ga_tracking_id:
+
+# Enable multipage navigation in the sidebar
+multipage_nav: true
+
+# Enable collapsible navigation in the sidebar
+collapsible_nav: true
+
+# Table of contents depth – how many levels to include in the table of contents.
+# If your ToC is too long, reduce this number and we'll only show higher-level
+# headings.
+max_toc_heading_level: 1
+
+# Prevent robots from indexing (e.g. whilst in development)
+prevent_indexing: true
+
+show_contribution_banner: false
+github_repo: cabinetoffice/datagovuk-tech-docs
+
+# redirects:
+#   /organogram-data.html: /publish_and_manage_data/harvest_or_add_data/add_data/#add-an-organogram
