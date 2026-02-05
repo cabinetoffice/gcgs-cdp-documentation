@@ -38,8 +38,8 @@ jobs:
 
       - name: Build site
         run: bundle exec middleman build --clean
-        env:
-          BASE_PATH: /gcgs-cdp-documentation
+        # env:
+        #   BASE_PATH: /gcgs-cdp-documentation
 
       - name: Upload Pages artifact (main only)
         # if: github.ref == 'refs/heads/main'
