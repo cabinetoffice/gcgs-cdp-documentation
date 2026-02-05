@@ -39,6 +39,19 @@ jobs:
       - name: Build site
         run: bundle exec middleman build --clean
 
+      - name: Fix asset paths for subpath hosting
+        run: |
+          PREFIX="/gcgs-cdp-documentation"
+
+          # Fix HTML references
+          find build -type f -name "*.html" -print0 | xargs -0 sed -i \
+            -e "s|href=\"/|href=\"$PREFIX/|g" \
+            -e "s|src=\"/|src=\"$PREFIX/|g"
+
+          # Fix CSS url(/...) references (images/fonts)
+          find build -type f -name "*.css" -print0 | xargs -0 sed -i \
+            -e "s|url(/|url($PREFIX/|g"
+
       - name: Upload Pages artifact (main only)
         if: github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v3
@@ -46,7 +59,8 @@ jobs:
           path: build
 
   deploy:
-    if: github.ref == 'refs/heads/main'
+    # if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/integration'
     needs: build
     runs-on: ubuntu-latest
     environment:
