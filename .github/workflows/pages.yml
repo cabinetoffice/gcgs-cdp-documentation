@@ -38,12 +38,23 @@ jobs:
 
       - name: Build site
         run: bundle exec middleman build --clean
+      
+      - name: Fix CSS absolute asset URLs for subpath hosting
+        run: |
+          PREFIX="/gcgs-cdp-documentation"
 
-      - name: Upload Pages artifact (main only)
-        if: github.ref == 'refs/heads/main'
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: build
+          # Only CSS url() - handle url("/..."), url('/...'), url(/...)
+          find build -type f -name "*.css" -print0 | xargs -0 sed -i \
+            -e "s|url(/|url($PREFIX/|g" \
+            -e "s|url(\"/|url(\"$PREFIX/|g" \
+            -e "s|url('/|url('$PREFIX/|g"
+
+
+            - name: Upload Pages artifact (main only)
+              if: github.ref == 'refs/heads/main'
+              uses: actions/upload-pages-artifact@v3
+              with:
+                path: build
 
   deploy:
     if: github.ref == 'refs/heads/main'
