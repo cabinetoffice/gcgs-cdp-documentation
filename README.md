@@ -157,22 +157,10 @@ followed by the file name:
 
 #### Step 5 - With your pull request now assigned to a reviewer, await their feedback.
 
-## Content approvers
-
-Copy the content editors section and tailor it for approvers
-
-//-------------------
-
-### Submit content for approval
-
-1. Navigate to the **Pull requests** tab.
-2. Open your Pull Request.
-3. Copy the Pull Request URL from the browser address bar.
-4. Send the PR URL to an approver, who will review the changes prior to them going live.
 
 ## Content approvers
 
-Copy the content editors section and tailor it for approvers
+TODO
 
 ## Development setup
 
