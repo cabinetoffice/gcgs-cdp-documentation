@@ -151,10 +151,6 @@ followed by the file name:
 
    <img src="assets/images/20-select-reviewer.png" width="450">
 
-#### Step 4 - Select the `Settings` (⚙) icon next to `Reviewers` to choose a reviewer.
-
-   <img src="assets/images/20-select-reviewer.png" width="450">
-
 #### Step 5 - With your pull request now assigned to a reviewer, await their feedback.
 
 
