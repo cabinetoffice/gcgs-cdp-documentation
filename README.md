@@ -135,7 +135,7 @@ followed by the file name:
 
 #### Step 9 - Leave the default commit message, branch selection and optionally add a short description, then select `Commit changes...`.
 
-   <img src="assets/images/017-nav-file-commit-changes.png" width="600">
+   <img src="assets/images/17-nav-file-commit-changes.png" width="600">
 
 #### Step 10 - With your pull request now created, it is time to submit your content for approval.
 
