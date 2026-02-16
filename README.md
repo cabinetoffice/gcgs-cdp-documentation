@@ -91,6 +91,8 @@ followed by the file name:
 
 ### Step 12 - With your pull request now created, it is time to add your navigation to your content
 
+---
+
 ### How do I add navigation to my content?
 
 #### Step 1 - Select the `Code` tab at the top of the repository page
@@ -136,6 +138,8 @@ followed by the file name:
    <img src="assets/images/017-nav-file-commit-changes.png" width="600">
 
 #### Step 10 - With your pull request now created, it is time to submit your content for approval.
+
+---
 
 ### How do I submit my content for approval?
 
