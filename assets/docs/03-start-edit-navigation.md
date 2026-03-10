@@ -1,4 +1,4 @@
-# Start edit site navigation
+# Start edit navigation
 
 Start edit → Edit content → **Start edit navigation** → Edit navigation → Preview content → Request review
 

@@ -36,4 +36,4 @@ Continue to the next step to request a review
 
 ← Back to [Edit navigation](./04-edit-navigation.md)
 
-[Request review](./05-request-review.md)
+[Request review](./06-request-review.md)

@@ -24,7 +24,8 @@ Select the gear icon and choose one or more reviewers
 GitHub automatically notifies the selected reviewers
 
 Your pull request is now ready for review.
-A reviewer will check your changes before they are published to the site.
+
+A reviewer will check your changes before they are published to the web site.
 
 ---
 
