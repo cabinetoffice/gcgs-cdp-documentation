@@ -27,19 +27,19 @@ Follow the guide that matches your role.
 
 Create or update website content using the GitHub web interface.
 
-[Content editing guide](assets/docs/01-start-edit-content.md)
+[Content editing guide](assets/docs/guides/01-start-edit-content/index.md)
 
 ### Testers
 
 Create test content to verify that the site editing workflow behaves as expected.
 
-[Testing guide](assets/docs/01-start-edit-content.md)
+[Testing guide](assets/docs/guides/01-start-edit-content/index.md)
 
 ### Developers
 
 Maintain the site codebase and development environment.
 
-[Development guide](assets/docs/07-developer-guide)
+[Development guide](assets/docs/guides/07-developer-guide/index.md)
 
 
 

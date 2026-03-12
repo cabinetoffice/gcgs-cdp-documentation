@@ -4,23 +4,22 @@ Start edit → **Edit content** → Start edit navigation → Edit navigation �
 
 This guide shows how to:
 
-* Create a new page
-* Edit an existing page
-* Remove an existing page
+- Create a new page
+- Edit an existing page
+- Remove an existing page
 
 ## Step 1 - Navigate to the correct content folder
 
 In the Files view, open `/source/documentation/` and navigate to the folder where you would like your content.
 
-<!-- <details>
+<details>
    <summary>Show screenshot</summary>
    <img src="../images/02-select-documentation-folder.png" width="600">
-</details> -->
-   <img src="../images/02-select-documentation-folder.png" width="600">
+</details>
 
 ## Step 2 - Create a new file or folder
 
-Select Add file, then Create new file. 
+Select Add file, then Create new file.
 
    <img src="../images/03-create-new-file.png" width="300">
 
@@ -30,11 +29,11 @@ Enter the file name. Content files must end with .md.
 
 To create a folder, include the folder name followed by / before the file name.
 
-```e.g. example-folder/new-file.md```
+`e.g. example-folder/new-file.md`
 
    <img src="../images/04-name-your-file-empty.png" width="450">
 
-## Step 3- Enter and preview your content 
+## Step 3- Enter and preview your content
 
 In the markdown edit / preview window, enter and preview your markdown content.
 
@@ -50,7 +49,7 @@ Select `Commit changes...` to save your changes to the repository.
 
 GitHub automatically creates a new branch for your changes.
 
-Leave the default commit message and branch name unchanged. 
+Leave the default commit message and branch name unchanged.
 
 If needed, add more detail in the extended description field.
 
