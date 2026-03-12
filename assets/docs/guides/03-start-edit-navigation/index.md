@@ -10,14 +10,20 @@ This guide shows how to:
 
 Select the Code tab at the top of the repository to view the repository files and branches.
 
+<details>
+   <summary>Show screenshot</summary>
    <img src="../shared/images/01-select-code-tab.png" width="300">
+</details>
 
 
 ## Step 2 – Switch to the branch that contains your edited content
 
 Use the branch dropdown to switch to the branch that contains your edited content.
 
-<img src="../shared/images/01a-select-base-branch.png" width="300">
+<details>
+   <summary>Show screenshot</summary>
+   <img src="../shared/images/01a-select-base-branch.png" width="300">
+</details>
 
 Continue to the next guide to edit your site navigation.
 
