@@ -23,12 +23,12 @@ Return to the repository page and select the `Code` tab to view the repository f
 
 <details>
     <summary>Show screenshot</summary>
-    <img src="../shared/images/01-select-code-tab.png" width="300">
+    <img src="../shared/images/switch-code-tab.png" width="300">
 </details>
 
 ## Step 3 – Switch to the correct base branch
 
-Select the correct base branch for your role.
+Switch to the correct base branch for your role.
 
 > [!WARNING]
 >
@@ -39,16 +39,16 @@ Select the correct base branch for your role.
 >
 > Testers **must always create branches from `staging`**.
 
-Use the branch dropdown to select the correct base branch.
+Use the branch dropdown to switch to the correct base branch.
 
 <details>
     <summary>Show screenshot</summary>
-    <img src="../shared/images/01a-select-base-branch.png" width="300">
+    <img src="../shared/images/switch-base-branch.png" width="300">
 </details>
 
-Continue to the next guide to edit your content.
-
 ---
+
+>Continue to the next guide to edit your content.
 
 ← Back to [Contributing](../../../../README.md)
 

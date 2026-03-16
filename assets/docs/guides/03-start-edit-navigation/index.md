@@ -12,7 +12,7 @@ Select the Code tab at the top of the repository to view the repository files an
 
 <details>
    <summary>Show screenshot</summary>
-   <img src="../shared/images/01-select-code-tab.png" width="300">
+   <img src="../shared/images/switch-code-tab.png" width="300">
 </details>
 
 
@@ -22,12 +22,12 @@ Use the branch dropdown to switch to the branch that contains your edited conten
 
 <details>
    <summary>Show screenshot</summary>
-   <img src="../shared/images/01a-select-base-branch.png" width="300">
+   <img src="../shared/images/switch-base-branch.png" width="300">
 </details>
 
-Continue to the next guide to edit your site navigation.
-
 ---
+
+>Continue to the next guide to edit your site navigation.
 
 ← Back to [Edit content](../02-edit-content/index.md)
 

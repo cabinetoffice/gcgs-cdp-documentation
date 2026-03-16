@@ -4,11 +4,13 @@ Start edit → **Edit content** → Start edit navigation → Edit navigation �
 
 This guide shows how to:
 
-- Create a new page
-- Edit an existing page
-- Remove an existing page
+- [Create a new page](#create-a-new-page)
+- [Edit an existing page](#edit-an-existing-page)
+- [Remove an existing page](#remove-an-existing-page)
 
-## Step 1 - Navigate to the correct content folder
+## Create a new page
+
+### Step 1 - Navigate to the correct content folder
 
 In the Files view, open `/source/documentation/`, which contains the site's content folders and pages.
 
@@ -17,7 +19,7 @@ In the Files view, open `/source/documentation/`, which contains the site's cont
    <img src="./images/02-select-documentation-folder.png" width="600">
 </details>
 
-## Step 2 - Create a new page
+### Step 2 - Create a new page
 
 Select `Add file`, then `Create new file`.
 
@@ -44,7 +46,7 @@ To create a folder, include the folder name followed by / before the file name.
    <<img src="./images/04-name-your-file-empty.png" width="450">
 </details>
 
-## Step 3- Enter and preview your content
+### Step 3- Enter and preview your content
 
 In the markdown edit window, enter your markdown content.
 
@@ -60,7 +62,7 @@ Then preview your content in the preview window.
    <img src="./images/07-file-preview-md.png" width="450">
 </details>
    
-## Step 4 - Commit your changes to the repository
+### Step 4 - Commit your changes to the repository
 
 Select `Commit changes...` to save your changes to the repository.
 
@@ -82,7 +84,7 @@ Select `Propose changes`.
    <img src="./images/09-file-propose-changes.png" width="450">
 </details>
 
-## Step 5 - Create your pull request
+### Step 5 - Create your pull request
 
 GitHub automatically opens the **Open a pull request** page.
 
@@ -97,9 +99,15 @@ Select `Create pull request`
 
 Your pull request has now been created.
 
-Continue to the next guide to start editing your site navigation.
+## Edit an existing page
+Coming soon.
+
+## Remove an existing page
+Coming soon.
 
 ---
+
+>Continue to the next guide to start editing your site navigation.
 
 ← Back to [Start editing](../01-start-edit-content/index.md)
 

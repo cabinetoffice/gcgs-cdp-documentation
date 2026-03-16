@@ -52,11 +52,8 @@ Update your content or navigation and preview again
 * [Return to Edit site navigation](../03-start-edit-navigation/index.md)
 
 ---
-**If the preview looks correct**
 
-Continue to the next step to request a review
-
----
+>Continue to the next step to request a review
 
 ← Back to [Edit navigation](../04-edit-navigation/index.md)
 

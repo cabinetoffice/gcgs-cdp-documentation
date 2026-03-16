@@ -4,15 +4,17 @@ Start edit → Edit content → Start edit navigation → **Edit navigation**→
 
 This guide shows, for an existing content page, how to:
 
-- Create a new navigation link page
-- Edit an existing navigation link page
-- Remove an existing navigation link page
+- [Create a new navigation link page](#create-a-new-navigation-link-page)
+- [Edit an existing navigation link page](#edit-an-existing-navigation-link-page)
+- [Remove an existing navigation link page](#remove-an-existing-navigation-link-page)
 
-## Step 1 - Navigate to the correct navigation link folder
+## Create a new navigation link page
+
+### Step 1 - Navigate to the correct navigation link folder
 
 In the Files view, open `/source/`, which contains the site's navigation link folders and pages.
 
-## Step 2 - Create a new navigation link page
+#####Step 2 - Create a new navigation link page
 
 Select `Add file`, then `Create new file`.
 
@@ -39,7 +41,7 @@ To create a folder, include the folder name followed by / before the file name.
    <<img src="./images/04-name-your-file-empty.png" width="450">
 </details>
 
-## Step 3- Enter your navigation link
+### Step 3- Enter your navigation link
 
 In the markdown edit window, enter your markdown navigation link data.
 
@@ -52,7 +54,7 @@ Ensure the `partial` statement's path reflects the path to the content file you 
    <img src="./images/06-file-edit-md.png" width="450">
 </details>
 
-## Step 4 - Commit your changes to the repository
+### Step 4 - Commit your changes to the repository
 
 Select `Commit changes...` to save your changes to the repository.
 
@@ -72,9 +74,15 @@ Select `Commit changes`.
    <img src="./images/17-nav-file-commit-changes.png" width="150">
 </details>
 
-Continue to the next guide to preview your content.
+## Edit an existing navigation link page
+Coming soon
+
+## Remove an existing navigation link page
+Coming soon
 
 ---
+
+>Continue to the next guide to preview your content.
 
 ← Back to [Start editing](../03-start-edit-navigation/index.md)
 
