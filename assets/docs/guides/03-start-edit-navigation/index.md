@@ -22,7 +22,7 @@ Use the branch dropdown to switch to the branch that contains your edited conten
 
 <details>
    <summary>Show screenshot</summary>
-   <img src="../shared/images/switch-base-branch.png" width="300">
+   <img src="./images/switch-content-branch.png" width="300">
 </details>
 
 ---

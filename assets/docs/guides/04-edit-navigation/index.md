@@ -14,13 +14,18 @@ This guide shows, for an existing content page, how to:
 
 In the Files view, open `/source/`, which contains the site's navigation link folders and pages.
 
-#####Step 2 - Create a new navigation link page
+<details>
+   <summary>Show screenshot</summary>
+   <img src="./images/select-source-folder.png" width="600">
+</details>
+
+### Step 2 - Create a new navigation link page
 
 Select `Add file`, then `Create new file`.
 
 <details>
    <summary>Show screenshot</summary>
-   <img src="../shared/images/03-create-new-file.png" width="600">
+   <img src="./images/create-new-file.png" width="600">
 </details>
 
 The file editor opens with a file name field at the top.
@@ -38,7 +43,7 @@ To create a folder, include the folder name followed by / before the file name.
 
 <details>
    <summary>Show screenshot</summary>
-   <<img src="./images/04-name-your-file-empty.png" width="450">
+   <<img src="./images/name-file-navigation-empty.png" width="600">
 </details>
 
 ### Step 3- Enter your navigation link
