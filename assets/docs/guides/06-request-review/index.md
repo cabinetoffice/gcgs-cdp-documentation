@@ -12,36 +12,40 @@ Select the `Pull requests` tab at the top of the repository to view all pull req
 
 <details>
     <summary>Show screenshot</summary>
-    <img src="../shared/images/01-select-code-tab.png" width="300">
+    <img src="../shared/images/switch-pull-requests-tab.png" width="300">
 </details>
 
 ## Step 2 - Switch to your pull request
 
-Select to the pull request created earlier.
+Switch to the pull request created earlier by selecting its title.
 
 <details>
     <summary>Show screenshot</summary>
-    <img src="./images/19-select-pull-request.png" width="450">
+    <img src="../shared/images/switch-pull-request.png" width="450">
 </details>
 
 GitHub displays the pull request.
 
-## Step 2 - Add reviewers
+<details>
+    <summary>Show screenshot</summary>
+    <img src="../shared/images/pull-request.png" width="450">
+</details>
 
-On the right hand side of the pull request page, locate the **Reviewers** section
-Select the gear icon and choose one or more reviewers
+## Step 3 - Add reviewers
+
+On the right hand side of the pull request page, locate the **Reviewers** section.
+
+Select the gear icon and choose one or more reviewers.
 
 <details>
     <summary>Show screenshot</summary>
-    <img src="./images/20-select-reviewer.png" width="450">
+    <img src="./images/select-reviewer.png" width="600">
 </details>
 
-GitHub automatically notifies the selected reviewers.
+GitHub automatically notifies the selected reviewer(s).
 
 ---
 
 >A reviewer will check your changes before they are approved and published to the website.
 
-
-
-← Back to [Preview content](../05-preview-content/index.md)
+← Previous [Preview content](../05-preview-content/index.md)

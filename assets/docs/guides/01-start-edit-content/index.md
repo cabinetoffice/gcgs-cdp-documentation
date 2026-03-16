@@ -50,6 +50,6 @@ Use the branch dropdown to switch to the correct base branch.
 
 >Continue to the next guide to edit your content.
 
-← Back to [Contributing](../../../../README.md)
+← Previous to [Contributing](../../../../README.md)
 
 Next → [Edit content](../02-edit-content/index.md)

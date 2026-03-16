@@ -13,7 +13,7 @@ Select the `Pull requests` tab at the top of the repository to view all pull req
 
 <details>
     <summary>Show screenshot</summary>
-    <img src="./images/switch-pull-requests-tab.png" width="300">
+    <img src="../shared/images/switch-pull-requests-tab.png" width="300">
 </details>
 
 ## Step 2 - Switch to your pull request
@@ -22,12 +22,17 @@ Switch to the pull request created earlier by selecting its title.
 
 <details>
     <summary>Show screenshot</summary>
-    <img src="./images/switch-pull-request.png" width="450">
+    <img src="../shared/images/switch-pull-request.png" width="450">
 </details>
 
 GitHub displays the pull request.
 
-## Step 2 - Open the preview site
+<details>
+    <summary>Show screenshot</summary>
+    <img src="../shared/images/pull-request.png" width="450">
+</details>
+
+## Step 3 - Open the preview site
 
 Locate the comment titled `Preview deployed`, then select the preview link contained within it.
    
@@ -36,7 +41,7 @@ Locate the comment titled `Preview deployed`, then select the preview link conta
     <img src="./images/preview-deployed-link.png" width="600">
 </details>
 
-## Step 3 - Review your changes
+## Step 4 - Review your changes
 
 Review the preview site to confirm that your changes appear correctly.
 
@@ -55,6 +60,6 @@ Update your content or navigation and preview again
 
 >Continue to the next step to request a review
 
-← Back to [Edit navigation](../04-edit-navigation/index.md)
+← Previous [Edit navigation](../04-edit-navigation/index.md)
 
-[Request review](../06-request-review/index.md)
+Next → [Request review](../06-request-review/index.md)

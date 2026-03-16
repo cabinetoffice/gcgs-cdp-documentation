@@ -109,6 +109,6 @@ Coming soon.
 
 Continue to the next guide to start editing your site navigation.
 
-← Back to [Start editing](../01-start-edit-content/index.md)
+← Previous [Start editing](../01-start-edit-content/index.md)
 
 Next → [Start edit navigation](../03-start-edit-navigation/index.md)

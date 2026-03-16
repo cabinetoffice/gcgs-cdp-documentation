@@ -92,6 +92,6 @@ Coming soon
 
 >Continue to the next guide to preview your content.
 
-← Back to [Start editing](../03-start-edit-navigation/index.md)
+← Previous [Start editing](../03-start-edit-navigation/index.md)
 
 Next → [Preview content](../05-preview-content/index.md)

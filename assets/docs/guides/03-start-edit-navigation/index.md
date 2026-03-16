@@ -29,6 +29,6 @@ Use the branch dropdown to switch to the branch that contains your edited conten
 
 >Continue to the next guide to edit your site navigation.
 
-← Back to [Edit content](../02-edit-content/index.md)
+← Previous [Edit content](../02-edit-content/index.md)
 
 Next → [Edit navigation](../04-edit-navigation/index.md)
