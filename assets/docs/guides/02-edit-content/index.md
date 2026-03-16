@@ -16,7 +16,7 @@ In the Files view, open `/source/documentation/`, which contains the site's cont
 
 <details>
    <summary>Show screenshot</summary>
-   <img src="./images/02-select-documentation-folder.png" width="600">
+   <img src="./images/select-documentation-folder.png" width="600">
 </details>
 
 ### Step 2 - Create a new page
@@ -25,14 +25,14 @@ Select `Add file`, then `Create new file`.
 
 <details>
    <summary>Show screenshot</summary>
-   <img src="../shared/images/03-create-new-file.png" width="600">
+   <img src="./images/create-new-file.png" width="600">
 </details>
 
 The file editor opens with a file name field at the top.
 
 <details>
    <summary>Show screenshot</summary>
-   <img src="#" width="600">
+   <img src="./images/name-file-empty.png" width="600">
 </details>
 
 Enter the name of the content file (**must end with .md file extension**).
@@ -43,7 +43,7 @@ To create a folder, include the folder name followed by / before the file name.
 
 <details>
    <summary>Show screenshot</summary>
-   <<img src="./images/04-name-your-file-empty.png" width="450">
+   <img src="./images/name-file-non-empty.png" width="600">
 </details>
 
 ### Step 3- Enter and preview your content
@@ -52,14 +52,14 @@ In the markdown edit window, enter your markdown content.
 
 <details>
    <summary>Show screenshot</summary>
-   <img src="./images/06-file-edit-md.png" width="450">
+   <img src="./images/file-edit-md.png" width="600">
 </details>
    
 Then preview your content in the preview window.
 
 <details>
    <summary>Show screenshot</summary>
-   <img src="./images/07-file-preview-md.png" width="450">
+   <img src="./images/file-preview-md.png" width="600">
 </details>
    
 ### Step 4 - Commit your changes to the repository
@@ -68,7 +68,7 @@ Select `Commit changes...` to save your changes to the repository.
 
 <details>
    <summary>Show screenshot</summary>
-   <img src="./images/08-file-commit-changes.png" width="150">
+   <img src="./images/file-commit-changes.png" width="600">
 </details>
 
 GitHub automatically creates a new branch for your changes.
@@ -81,7 +81,7 @@ Select `Propose changes`.
 
 <details>
    <summary>Show screenshot</summary>
-   <img src="./images/09-file-propose-changes.png" width="450">
+   <img src="./images/file-propose-changes.png" width="300">
 </details>
 
 ### Step 5 - Create your pull request
@@ -94,7 +94,7 @@ Select `Create pull request`
 
 <details>
     <summary>Show screenshot</summary>
-    <img src="./images/10-open-pull-request.png" width="600">
+    <img src="./images/open-pull-request.png" width="600">
 </details>
 
 Your pull request has now been created.
@@ -107,7 +107,7 @@ Coming soon.
 
 ---
 
->Continue to the next guide to start editing your site navigation.
+Continue to the next guide to start editing your site navigation.
 
 ← Back to [Start editing](../01-start-edit-content/index.md)
 
