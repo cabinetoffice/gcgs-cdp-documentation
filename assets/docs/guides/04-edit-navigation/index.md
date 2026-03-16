@@ -77,7 +77,7 @@ Select `Commit changes`.
 
 <details>
    <summary>Show screenshot</summary>
-   <img src="./images/17-nav-file-commit-changes.png" width="300">
+   <img src="./images/file-commit-changes-dialogue.png" width="300">
 </details>
 
 GitHub commits the changes to your branch.
