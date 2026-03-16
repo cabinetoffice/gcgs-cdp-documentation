@@ -32,7 +32,7 @@ The file editor opens with a file name field at the top.
 
 <details>
    <summary>Show screenshot</summary>
-   <img src="#" width="600">
+   <img src="./images/file-navigation-link-empty.png" width="600">
 </details>
 
 Ensure the name of the navigation file link is set to `index.html.md.erb`.
@@ -43,20 +43,21 @@ To create a folder, include the folder name followed by / before the file name.
 
 <details>
    <summary>Show screenshot</summary>
-   <<img src="./images/name-file-navigation-empty.png" width="600">
+   <img src="./images/file-navigation-link-non-empty.png" width="600">
 </details>
 
 ### Step 3- Enter your navigation link
 
 In the markdown edit window, enter your markdown navigation link data.
 
+- `title` - the display name of the link in the navigation panel.
 - `weight` - the ordering of the link within the navigation section.
 
 Ensure the `partial` statement's path reflects the path to the content file you created earlier (excluding the .md file extension).
 
 <details>
    <summary>Show screenshot</summary>
-   <img src="./images/06-file-edit-md.png" width="450">
+   <img src="./images/file-edit-md.png" width="600">
 </details>
 
 ### Step 4 - Commit your changes to the repository
@@ -65,19 +66,21 @@ Select `Commit changes...` to save your changes to the repository.
 
 <details>
    <summary>Show screenshot</summary>
-   <img src="./images/08-file-commit-changes.png" width="150">
+   <img src="./images/file-commit-changes.png" width="600">
 </details>
 
 GitHub shows the Commit changes confirmation window.
 
-Leave the default commit message and branch name unchanged.
+Leave the default commit message and selected branch unchanged.
 
 Select `Commit changes`.
 
 <details>
    <summary>Show screenshot</summary>
-   <img src="./images/17-nav-file-commit-changes.png" width="150">
+   <img src="./images/17-nav-file-commit-changes.png" width="300">
 </details>
+
+GitHub commits the changes to your branch.
 
 ## Edit an existing navigation link page
 Coming soon
