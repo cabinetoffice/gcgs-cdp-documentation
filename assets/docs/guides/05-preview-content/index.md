@@ -13,16 +13,16 @@ Select the `Pull requests` tab at the top of the repository to view all pull req
 
 <details>
     <summary>Show screenshot</summary>
-    <img src="../shared/images/01-select-code-tab.png" width="300">
+    <img src="./images/switch-pull-requests-tab.png" width="300">
 </details>
 
 ## Step 2 - Switch to your pull request
 
-Select to the pull request created earlier.
+Switch to the pull request created earlier by selecting its title.
 
 <details>
     <summary>Show screenshot</summary>
-    <img src="../shared/images/19-select-pull-request.png" width="450">
+    <img src="./images/switch-pull-request.png" width="450">
 </details>
 
 GitHub displays the pull request.
@@ -33,7 +33,7 @@ Locate the comment titled `Preview deployed`, then select the preview link conta
    
 <details>
     <summary>Show screenshot</summary>
-    <img src="#">
+    <img src="./images/preview-deployed-link.png" width="600">
 </details>
 
 ## Step 3 - Review your changes
@@ -42,7 +42,7 @@ Review the preview site to confirm that your changes appear correctly.
 
 <details>
     <summary>Show screenshot</summary>
-    <img src="#">
+    <img src="./images/preview-site.png" width="600">
 </details>
 
 **If changes are required**
