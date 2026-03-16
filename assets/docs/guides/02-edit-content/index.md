@@ -73,7 +73,7 @@ Select `Commit changes...` to save your changes to the repository.
 
 GitHub automatically creates a new branch for your changes.
 
-Leave the default commit message and branch name unchanged.
+Leave the default commit message and branch name unchanged, but **make a note of the new branch name**.
 
 If needed, add more detail in the extended description field.
 
