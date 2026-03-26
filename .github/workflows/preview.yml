@@ -4,8 +4,8 @@ on:
   pull_request:
     branches: ["main", "staging"]
     types: [opened, synchronize, reopened, ready_for_review, closed]
-    paths-ignore:
-      - "README.md"
+    paths:
+      - "source/**"
 
 permissions:
   contents: read

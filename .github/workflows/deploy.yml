@@ -3,8 +3,8 @@ name: Build & Deploy (Middleman → GitHub Pages & S3)
 on:
   push:
     branches: ["main", "staging"]
-    paths-ignore:
-      - "README.md"
+    paths:
+      - "source/**"
 
 permissions:
   contents: read
