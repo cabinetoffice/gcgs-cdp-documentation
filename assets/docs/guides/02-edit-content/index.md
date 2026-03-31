@@ -100,10 +100,50 @@ Select `Create pull request`
 Your pull request has now been created.
 
 ## Edit an existing page
-Coming soon.
+
+### Step 1 - Navigate to the content file
+
+In the Files view, navigate to the file you want to edit.
+
+<details>
+   <summary>Show screenshot</summary>
+   <img src="./images/navigate-to-content.png" width="300">
+</details>
+
+### Step 2 - Open the file in edit mode
+
+Select the `edit this file` (pencil icon) to enable edit mode.
+
+<details>
+   <summary>Show screenshot</summary>
+   <img src="./images/select-edit-button.png" width="600">
+</details>
+
+### Step 3 - Edit, preview and commit your changes
+Follow **Steps 3-5 in [Create a new page](#create-a-new-page)** to update, preview and commit your changes.
 
 ## Remove an existing page
-Coming soon.
+
+### Step 1 - Navigate to the content file
+
+In the Files view, navigate to the file you want to delete.
+
+<details>
+   <summary>Show screenshot</summary>
+   <img src="./images/navigate-to-content.png" width="300">
+</details>
+
+### Step 2 - Delete the file
+
+Select **...**`(More file actions)`, then choose `Delete file`.
+
+<details>
+   <summary>Show screenshot</summary>
+   <img src="./images/select-delete-file.png" width="600">
+</details>
+
+### Step 3 - Commit your changes
+Follow **Steps 4-5 in [Create a new page](#create-a-new-page)** to commit your changes and create a pull request.
 
 ---
 

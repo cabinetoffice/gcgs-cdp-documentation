@@ -83,10 +83,51 @@ Select `Commit changes`.
 GitHub commits the changes to your branch.
 
 ## Edit an existing navigation link page
-Coming soon
+
+### Step 1 - Navigate to the navigation link page
+
+In the Files view, navigate to the navigation link page you want to edit.
+
+<details>
+   <summary>Show screenshot</summary>
+   <img src="./images/navigate-to-navigation-link.png" width="300">
+</details>
+
+### Step 2 - Open the file in edit mode
+
+Select the `edit this file` (pencil icon) to enable edit mode.
+
+<details>
+   <summary>Show screenshot</summary>
+   <img src="./images/select-edit-button.png" width="600">
+</details>
+
+### Step 3 - Edit, preview and commit your changes
+Follow **Steps 3-5 in [Create a new navigation link page](#create-a-new-navigation-link-page)** to update, preview and commit your changes.
 
 ## Remove an existing navigation link page
-Coming soon
+
+### Step 1 - Navigate to the navigation link page
+
+In the Files view, navigate to the file you want to delete.
+
+<details>
+   <summary>Show screenshot</summary>
+   <img src="./images/navigate-to-navigation-link.png" width="300">
+</details>
+
+### Step 2 - Delete the file
+
+Select **...**`(More file actions)`, then choose `Delete file`.
+
+<details>
+   <summary>Show screenshot</summary>
+   <img src="./images/select-delete-navigation-file.png" width="600">
+</details>
+
+### Step 3 - Commit your changes
+Follow **Steps 4-5 in [Create a new page](#create-a-new-navigation-link-page)** to commit your changes and create a pull request.
+
 
 ---
 
