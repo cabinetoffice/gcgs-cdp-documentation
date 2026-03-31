@@ -1,0 +1,92 @@
+name: PR Preview (Middleman → S3)
+
+on:
+  pull_request:
+    branches: ["main", "staging"]
+    types: [opened, synchronize, reopened, ready_for_review, closed]
+    paths:
+      - "source/**"
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+  id-token: write
+
+concurrency:
+  group: "preview-pr-${{ github.event.pull_request.number }}"
+  cancel-in-progress: true
+
+jobs:
+  pr_preview_deploy:
+    if: github.event.action != 'closed'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: .ruby-version
+          bundler-cache: true
+
+      - name: Build site
+        run: bundle exec middleman build --clean
+
+      - name: Configure AWS credentials
+        uses: ./.github/actions/configure-aws
+        with:
+          aws-region: ${{ secrets.AWS_REGION }}
+          auth-method: ${{ vars.AWS_AUTH_METHOD }}
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+      - name: Deploy PR preview
+        run: |
+          aws s3 sync build \
+            "s3://${{ secrets.S3_BUCKET }}/previews/${{ github.event.pull_request.base.ref }}/pr${{ github.event.pull_request.number }}/" \
+            --delete
+
+      - name: Comment preview URL on PR
+        uses: ./.github/actions/pr-preview-comment
+        env:
+          PREVIEW_BASE_URL: "http://${{ secrets.S3_BUCKET }}.s3-website.${{ secrets.AWS_REGION }}.amazonaws.com"
+        with:
+          github-token: ${{ github.token }}
+          message: "✅ **Preview deployed**"
+          url: "${{ env.PREVIEW_BASE_URL }}/previews/${{ github.event.pull_request.base.ref }}/pr${{ github.event.pull_request.number }}/"
+
+  pr_preview_cleanup:
+    if: github.event.action == 'closed'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: ./.github/actions/configure-aws
+        with:
+          aws-region: ${{ secrets.AWS_REGION }}
+          auth-method: ${{ vars.AWS_AUTH_METHOD }}
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+      - name: Remove PR preview
+        run: |
+          aws s3 rm \
+            "s3://${{ secrets.S3_BUCKET }}/previews/${{ github.event.pull_request.base.ref }}/pr${{ github.event.pull_request.number }}/" \
+            --recursive
+
+      - name: Comment preview removed on PR
+        uses: ./.github/actions/pr-preview-comment
+        env:
+          PREVIEW_BASE_URL: "http://${{ secrets.S3_BUCKET }}.s3-website.${{ secrets.AWS_REGION }}.amazonaws.com"
+        with:
+          github-token: ${{ github.token }}
+          message: "🧹 **Preview removed** (PR closed)"
+          url: "${{ env.PREVIEW_BASE_URL }}/previews/${{ github.event.pull_request.base.ref }}/pr${{ github.event.pull_request.number }}/"

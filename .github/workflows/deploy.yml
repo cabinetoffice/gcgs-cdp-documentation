@@ -1,0 +1,98 @@
+name: Build & Deploy (Middleman → GitHub Pages & S3)
+
+on:
+  push:
+    branches: ["main", "staging"]
+    paths:
+      - "source/**"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "deploy-${{ github.ref }}"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: .ruby-version
+          bundler-cache: true
+
+      - name: Build site
+        run: bundle exec middleman build --clean
+
+      - name: Fix CSS absolute asset URLs for subpath hosting
+        if: github.ref == 'refs/heads/main'
+        run: |
+          PREFIX="/gcgs-cdp-documentation"
+
+          find build -type f -name "*.css" -print0 | xargs -0 sed -i \
+            -e "s|url(/|url($PREFIX/|g" \
+            -e "s|url(\"/|url(\"$PREFIX/|g" \
+            -e "s|url('/|url('$PREFIX/|g"
+
+      - name: Upload Pages artifact (main only)
+        if: github.ref == 'refs/heads/main'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build
+
+      - name: Upload build artifact for S3
+        if: github.ref == 'refs/heads/staging'
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-build
+          path: build
+          if-no-files-found: error
+
+  deploy_pages:
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  deploy_staging:
+    if: github.ref == 'refs/heads/staging'
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout branch for custom actions
+        uses: actions/checkout@v4
+
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: site-build
+          path: site
+
+      - name: Configure AWS credentials
+        uses: ./.github/actions/configure-aws
+        with:
+          aws-region: ${{ secrets.AWS_REGION }}
+          auth-method: ${{ vars.AWS_AUTH_METHOD }}
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+      - name: Sync to S3
+        run: |
+          aws s3 sync site "s3://${{ secrets.S3_BUCKET }}/staging/" --delete
