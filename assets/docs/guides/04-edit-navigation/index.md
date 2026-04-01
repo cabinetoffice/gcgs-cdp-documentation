@@ -126,7 +126,7 @@ Select **...**`(More file actions)`, then choose `Delete file`.
 </details>
 
 ### Step 3 - Commit your changes
-Follow **Steps 4-5 in [Create a new page](#create-a-new-navigation-link-page)** to commit your changes and create a pull request.
+Follow **Steps 4-5 in [Create a new navigation link page](#create-a-new-navigation-link-page)** to commit your changes and create a pull request.
 
 
 ---
