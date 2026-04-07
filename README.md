@@ -1,12 +1,46 @@
-## Development setup
+# Technical Documentation
 
-This site is built using [**govuk_tech_docs 3.5.0**](https://github.com/alphagov/datagovuk-tech-docs).
+## This project
 
-Dependencies are intentionally locked to ensure reproducible builds. Please note:
+This project provides a statically generated website for publishing technical documentation.
 
-- Ruby version is pinned in `.ruby-version` (Ruby **3.2.2**)
-- Gem versions are locked in `Gemfile.lock`
-- Always run commands via Bundler
+It enables content editors to create, manage, and update documentation through a structured content workflow, while delivering fast, secure, and scalable static pages to users.
 
-```bash
-bundle exec middleman server
+🌐 Live site: https://guidance.cabinetoffice.gov.uk/gcgs-cdp-documentation/
+
+## Credits
+
+This project is based on
+[alphagov / datagovuk-tech-docs](https://github.com/alphagov/datagovuk-tech-docs).
+
+## Contributing
+
+This repository supports three contributor roles.
+- Content Editors
+- Testers
+- Developers
+
+Follow the guide that matches your role.
+
+<!-- **Content editors**   -->
+### Content editors
+
+Create or update website content using the GitHub web interface.
+
+[Content editing guide](assets/docs/guides/01-start-edit-content/index.md)
+
+### Testers
+
+Create test content to verify that the site editing workflow behaves as expected.
+
+[Testing guide](assets/docs/guides/01-start-edit-content/index.md)
+
+### Developers
+
+Maintain the site codebase and development environment.
+
+[Development guide](assets/docs/guides/07-developer-guide/index.md)
+
+
+
+
