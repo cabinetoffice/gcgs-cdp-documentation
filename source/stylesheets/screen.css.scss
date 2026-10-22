@@ -1,1 +1,25 @@
 @import "govuk_tech_docs";
+
+.grey-box {
+  background-color: #f3f2f1;
+  border-left: 5px solid govuk-colour('blue');
+  padding: 20px;
+  margin-bottom: 30px;
+
+  ul {
+    margin-bottom: 0;
+  }
+}
+
+.white-box {
+  background-color: #ffffff;
+  border:1px solid grey;
+  padding: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+
+  ul {
+    margin-bottom: 0;
+  }
+}
